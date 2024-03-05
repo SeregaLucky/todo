@@ -1,8 +1,10 @@
+$xl-mobile: 568px;
+
 .todoForm {
   background-color: var(--color-fourth);
   padding: 20px;
 
-  @media (min-width: 568px) {
+  @media (min-width: $xl-mobile) {
     display: flex;
     align-items: center;
   }
@@ -14,7 +16,7 @@
   flex-grow: 1;
   margin-bottom: 20px;
 
-  @media (min-width: 568px) {
+  @media (min-width: $xl-mobile) {
     margin-bottom: 0;
     margin-right: 10px;
   }
@@ -57,7 +59,7 @@
     background-color: #3b3b3b;
   }
 
-  @media (min-width: 568px) {
+  @media (min-width: $xl-mobile) {
     width: auto;
   }
 }

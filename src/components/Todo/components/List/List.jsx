@@ -1,10 +1,10 @@
-import Item from '../Item';
+import Item from "../Item";
 
-import Spinner from '../Spinner';
+import Spinner from "../Spinner";
 
-import { useGetTodo } from './useGetTodo';
+import { useGetTodo } from "./useGetTodo";
 
-import styles from './List.module.scss';
+import styles from "./List.module.scss";
 
 const List = () => {
   const { isListLoading, listItems } = useGetTodo();

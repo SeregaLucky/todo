@@ -1,9 +1,9 @@
-import { useSelector } from 'react-redux';
-import cn from 'classnames';
+import { useSelector } from "react-redux";
+import cn from "classnames";
 
-import { getDataCountStatus } from '../../../../redux/items/itemsSelectors';
+import { getDataCountStatus } from "../../../../redux/items/itemsSelectors";
 
-import styles from './CountStatus.module.scss';
+import styles from "./CountStatus.module.scss";
 
 const CountStatus = () => {
   const { inProcess, completed } = useSelector(getDataCountStatus);

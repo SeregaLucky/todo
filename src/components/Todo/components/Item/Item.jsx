@@ -1,16 +1,16 @@
-import { memo } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import cn from 'classnames';
+import { memo } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import cn from "classnames";
 
-import Spinner from '../Spinner';
+import Spinner from "../Spinner";
 
-import itemsOperations from '../../../../redux/items/itemsOperations';
+import itemsOperations from "../../../../redux/items/itemsOperations";
 import {
   getIsChangeStatusItemLoading,
   getIsRemoveItemLoading,
-} from '../../../../redux/items/itemsSelectors';
+} from "../../../../redux/items/itemsSelectors";
 
-import styles from './Item.module.scss';
+import styles from "./Item.module.scss";
 
 const Item = ({ id, title, isCompleted }) => {
   // console.log('RENDER ITEM', title);

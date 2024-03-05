@@ -1,15 +1,15 @@
-import { useDispatch, useSelector } from 'react-redux';
-import cn from 'classnames';
+import { useDispatch, useSelector } from "react-redux";
+import cn from "classnames";
 
-import { FilterStatus } from 'const/filterStatus';
+import { FilterStatus } from "const/filterStatus";
 
-import itemsActions from '../../../../redux/items/itemsActions';
+import itemsActions from "../../../../redux/items/itemsActions";
 import {
   getFilterStatus,
   getIsEmptyList,
-} from '../../../../redux/items/itemsSelectors';
+} from "../../../../redux/items/itemsSelectors";
 
-import styles from './FilterByComplete.module.scss';
+import styles from "./FilterByComplete.module.scss";
 
 const FilterByComplete = () => {
   const dispatch = useDispatch();

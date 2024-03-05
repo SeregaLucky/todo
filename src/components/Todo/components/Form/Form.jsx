@@ -1,12 +1,12 @@
-import { useSelector } from 'react-redux';
+import { useSelector } from "react-redux";
 
-import Spinner from '../Spinner';
+import Spinner from "../Spinner";
 
-import { getIsAddItemLoading } from '../../../../redux/items/itemsSelectors';
+import { getIsAddItemLoading } from "../../../../redux/items/itemsSelectors";
 
-import { useFormTodo } from './useFormTodo';
+import { useFormTodo } from "./useFormTodo";
 
-import styles from './Form.module.scss';
+import styles from "./Form.module.scss";
 
 const Form = () => {
   const isAddingItem = useSelector(getIsAddItemLoading);
@@ -21,7 +21,7 @@ const Form = () => {
           type="text"
           placeholder="Todo..."
           autoFocus={true}
-          {...register('title')}
+          {...register("title")}
         />
 
         {error?.message && (

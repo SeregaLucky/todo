@@ -1,4 +1,4 @@
-import itemsTypes from './itemsTypes';
+import itemsTypes from "./itemsTypes";
 
 /* GET_ITEMS */
 const getItemsStart = () => ({
@@ -68,7 +68,6 @@ const changeFilterStatus = filterStatus => ({
   payload: { filterStatus },
 });
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   getItemsStart,
   getItemsSuccess,

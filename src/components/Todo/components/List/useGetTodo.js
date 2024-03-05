@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 
 import {
   getFilterByFilterStatus,
   getIsGetItemsLoading,
-} from '../../../../redux/items/itemsSelectors';
-import itemsOperations from '../../../../redux/items/itemsOperations';
+} from "../../../../redux/items/itemsSelectors";
+import itemsOperations from "../../../../redux/items/itemsOperations";
 
 export const useGetTodo = () => {
   const dispatch = useDispatch();

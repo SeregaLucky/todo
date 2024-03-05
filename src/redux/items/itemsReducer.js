@@ -1,7 +1,7 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-import itemsTypes from './itemsTypes';
-import { FilterStatus } from 'const/filterStatus';
+import itemsTypes from "./itemsTypes";
+import { FilterStatus } from "const/filterStatus";
 
 const itemsReducer = (state = [], { type, payload }) => {
   switch (type) {

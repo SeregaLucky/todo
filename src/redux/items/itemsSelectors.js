@@ -1,6 +1,6 @@
-import { createSelector } from 'reselect';
+import { createSelector } from "reselect";
 
-import { FilterStatus } from 'const/filterStatus';
+import { FilterStatus } from "const/filterStatus";
 
 const getListItems = state => state.itemsReducer.items;
 

@@ -3,12 +3,12 @@ import {
   getItemsMock,
   changeCompletedStatusInItemMock,
   removeItemMock,
-} from '../../api/api';
-import itemsActions from './itemsActions';
+} from "../../api/api";
+import itemsActions from "./itemsActions";
 import {
   getIsChangeStatusItemLoading,
   getIsRemoveItemLoading,
-} from './itemsSelectors';
+} from "./itemsSelectors";
 
 const getItems = () => async dispatch => {
   dispatch(itemsActions.getItemsStart());
@@ -64,7 +64,6 @@ const removeItem = id => async (dispatch, getState) => {
   }
 };
 
-// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   getItems,
   addItem,

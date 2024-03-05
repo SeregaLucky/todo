@@ -1,57 +1,57 @@
-import { nanoid } from 'nanoid';
+import { nanoid } from "nanoid";
 
 let items = [
   {
     id: nanoid(),
-    title: 'Study',
+    title: "Study",
     isCompleted: false,
   },
 
   {
     id: nanoid(),
-    title: 'Work',
+    title: "Work",
     isCompleted: false,
   },
 
   {
     id: nanoid(),
-    title: 'Buy milk',
+    title: "Buy milk",
     isCompleted: false,
   },
 
   {
     id: nanoid(),
-    title: 'Buy bread',
+    title: "Buy bread",
     isCompleted: false,
   },
 
   {
     id: nanoid(),
-    title: 'Slip for 7 hours',
+    title: "Slip for 7 hours",
     isCompleted: false,
   },
 
   {
     id: nanoid(),
-    title: 'Go to training',
+    title: "Go to training",
     isCompleted: false,
   },
 
   {
     id: nanoid(),
-    title: 'Watch movie',
+    title: "Watch movie",
     isCompleted: false,
   },
 
   {
     id: nanoid(),
-    title: 'Call my girlfriend',
+    title: "Call my girlfriend",
     isCompleted: false,
   },
 
   {
     id: nanoid(),
-    title: 'Relax',
+    title: "Relax",
     isCompleted: false,
   },
 ];

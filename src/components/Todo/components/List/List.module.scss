@@ -1,0 +1,10 @@
+.containerSpinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.list {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}

@@ -1,0 +1,83 @@
+.item {
+  position: relative;
+
+  background-color: rgba(231, 231, 231, 0.4);
+  padding: 24px 24px 24px 10px;
+  border-bottom: 1px solid var(--color-first);
+
+  &.removing {
+    background-color: var(--color-error);
+    transition: 0.1s;
+  }
+}
+
+.title {
+  position: relative;
+
+  padding-left: 14px;
+  cursor: pointer;
+  color: var(--color-first);
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 50%;
+    left: -4px;
+    transform: translateY(-50%);
+
+    height: 14px;
+    width: 14px;
+    border-radius: 3px;
+    border: 1px solid var(--color-first);
+  }
+
+  &.completed::after {
+    background-color: var(--color-third);
+    border: 1px solid var(--color-first);
+  }
+
+  &.changeCompletedStatusLoading::after {
+    display: none;
+  }
+
+  &.completed {
+    text-decoration: line-through;
+  }
+
+  &.changeCompletedStatusLoading {
+    color: var(--color-second);
+  }
+}
+
+.containerSpinner {
+  position: absolute;
+  top: 50%;
+  left: -21px;
+  transform: translateY(-50%) scale(0.18, 0.18);
+  z-index: 1;
+}
+
+.buttonRemove {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  border: none;
+  background-color: rgba(255, 59, 58, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  height: 20px;
+  width: 20px;
+}
+
+.item:hover .buttonRemove {
+  background-color: rgba(255, 59, 58, 0.7);
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.2s;
+}
+
+.item .buttonRemove:hover {
+  background-color: rgba(255, 59, 58, 1);
+  color: rgba(255, 255, 255, 1);
+  transition: 0.2s;
+}

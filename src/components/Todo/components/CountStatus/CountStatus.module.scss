@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+}
+
+.count {
+  width: 50%;
+  text-align: center;
+  color: var(--color-first);
+  display: block;
+  padding: 4px 0;
+
+  &.inProcess {
+    background-color: orange;
+  }
+  &.completed {
+    background-color: var(--color-third);
+  }
+}

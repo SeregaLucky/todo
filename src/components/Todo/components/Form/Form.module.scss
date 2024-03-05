@@ -1,0 +1,70 @@
+.todoForm {
+  background-color: var(--color-fourth);
+  padding: 20px;
+
+  @media (min-width: 568px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.containerInput {
+  position: relative;
+
+  flex-grow: 1;
+  margin-bottom: 20px;
+
+  @media (min-width: 568px) {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+
+.inputTitle {
+  background-color: var(--color-second);
+  height: 40px;
+  border: none;
+  border-radius: 30px;
+  padding: 0 10px;
+  font-size: 18px;
+  width: 100%;
+
+  &:focus {
+    background-color: var(--color-first);
+  }
+}
+
+.errorText {
+  position: absolute;
+  left: 0;
+  bottom: -18px;
+
+  color: var(--color-error);
+}
+
+.submitButton {
+  position: relative;
+
+  background-color: var(--color-fifth);
+  color: var(--color-first);
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  width: 100%;
+
+  &:disabled {
+    background-color: #3b3b3b;
+  }
+
+  @media (min-width: 568px) {
+    width: auto;
+  }
+}
+
+.containerSpinner {
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%) scale(0.3, 0.3);
+}

@@ -4,11 +4,7 @@ module.exports = {
     es2021: true,
   },
 
-  extends: [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "@wemake-services/stylelint-config-scss",
-  ],
+  extends: ["eslint:recommended", "plugin:react/recommended"],
 
   overrides: [
     {

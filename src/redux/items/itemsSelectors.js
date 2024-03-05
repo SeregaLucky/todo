@@ -13,20 +13,6 @@ export const getIsGetItemsLoading = state =>
 
 export const getIsAddItemLoading = state => state.itemsReducer.isAddItemLoading;
 
-export const dd = state =>
-  getListItems(state).reduce(
-    (acc, item) => {
-      if (item.isCompleter) {
-        acc.completer += 1;
-        return acc;
-      }
-
-      acc.inProcess += 1;
-      return acc;
-    },
-    { completer: 0, inProcess: 0 },
-  );
-
 export const getDataCountStatus = createSelector([getListItems], list => {
   return list.reduce(
     (acc, item) => {

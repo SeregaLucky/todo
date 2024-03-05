@@ -13,7 +13,6 @@ import {
 import styles from "./Item.module.scss";
 
 const Item = ({ id, title, isCompleted }) => {
-  // console.log('RENDER ITEM', title);
   const dispatch = useDispatch();
 
   const isRemoveLoading = useSelector(state =>
@@ -66,5 +65,4 @@ const Item = ({ id, title, isCompleted }) => {
   );
 };
 
-// export default Item;
 export default memo(Item);

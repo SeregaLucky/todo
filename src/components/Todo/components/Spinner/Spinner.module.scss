@@ -5,16 +5,16 @@
   position: relative;
   border-width: 3px 2px 3px 2px;
   border-style: solid dotted solid dotted;
-  border-color: #e7115b rgba(255, 255, 255, 0.3) #fff rgba(151, 107, 93, 0.3);
+  border-color: var(--color-fifth) rgba(255, 255, 255, 0.3) #fff
+    rgba(151, 107, 93, 0.3);
   border-radius: 50%;
   box-sizing: border-box;
   animation: 1s rotate linear infinite;
 }
 
-// #de3500 #e7115b
 .loader:before,
 .loader:after {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   position: absolute;
@@ -24,7 +24,7 @@
 }
 
 .loader:after {
-  border-color: #e7115b #0000 #0000 #0000;
+  border-color: var(--color-fifth) #000 #000 #000;
   transform: translate(32px, 3px) rotate(-35deg);
 }
 

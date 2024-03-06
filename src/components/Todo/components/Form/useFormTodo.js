@@ -23,6 +23,7 @@ export const useFormTodo = () => {
     formState: { errors },
     handleSubmit,
     reset,
+    setFocus,
   } = useForm({ resolver: yupResolver(schema), mode: "onSubmit" });
 
   const onSubmit = async ({ title }) => {
@@ -31,6 +32,7 @@ export const useFormTodo = () => {
 
     await dispatch(itemsOperations.addItem(titleTrim));
     reset({ title: "" });
+    setFocus("title");
   };
 
   return {

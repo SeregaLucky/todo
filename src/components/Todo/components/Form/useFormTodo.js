@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 
 import itemsOperations from "../../../../redux/items/itemsOperations";
 
-const MAX_TITLE_LENGTH = 3;
+const MAX_TITLE_LENGTH = 30;
 
 const schema = yup.object({
   title: yup

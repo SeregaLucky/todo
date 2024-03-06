@@ -27,7 +27,7 @@ export const getDataCountStatus = createSelector([getTodoList], (list) => {
       acc.inProcess += 1;
       return acc;
     },
-    { completed: 0, inProcess: 0 },
+    { "completed": 0, "inProcess": 0 },
   );
 });
 

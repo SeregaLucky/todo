@@ -16,7 +16,7 @@ const todoListReducer = (state = [], { type, payload }) => {
     case todoTypes.CHANGE_COMPLETED_STATUS_IN_TODO_SUCCESS: {
       return state.map((todo) => {
         if (todo.id === payload.id) {
-          return { ...todo, isCompleted: payload.isCompleted };
+          return { ...todo, "isCompleted": payload.isCompleted };
         }
 
         return todo;
@@ -101,7 +101,7 @@ const changeStatusTodoIdsLoadingReducer = (state = [], { type, payload }) => {
   }
 };
 
-const errorReducer = (state = null, { type, payload }) => {
+const errorReducer = (state = {}, { type, payload }) => {
   switch (type) {
     case todoTypes.GET_TODO_LIST_FAILURE:
     case todoTypes.ADD_TODO_FAILURE:
@@ -114,7 +114,7 @@ const errorReducer = (state = null, { type, payload }) => {
     case todoTypes.ADD_TODO_START:
     case todoTypes.CHANGE_COMPLETED_STATUS_IN_TODO_START:
     case todoTypes.REMOVE_TODO_START: {
-      return null;
+      return {};
     }
 
     default: {
@@ -137,11 +137,11 @@ const filterStatusReducer = (state = FilterStatus.ALL, { type, payload }) => {
 };
 
 export default combineReducers({
-  todoList: todoListReducer,
-  isGetTodoListLoading: isGetTodoListLoadingReducer,
-  isAddTodoLoading: isAddTodoLoadingReducer,
-  removeTodoIdsLoading: removeTodoIdsLoadingReducer,
-  changeStatusTodoIdsLoading: changeStatusTodoIdsLoadingReducer,
-  error: errorReducer,
-  filterStatus: filterStatusReducer,
+  "todoList": todoListReducer,
+  "isGetTodoListLoading": isGetTodoListLoadingReducer,
+  "isAddTodoLoading": isAddTodoLoadingReducer,
+  "removeTodoIdsLoading": removeTodoIdsLoadingReducer,
+  "changeStatusTodoIdsLoading": changeStatusTodoIdsLoadingReducer,
+  "error": errorReducer,
+  "filterStatus": filterStatusReducer,
 });

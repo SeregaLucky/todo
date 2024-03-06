@@ -2,57 +2,57 @@ import { nanoid } from "nanoid";
 
 let todoList = [
   {
-    id: nanoid(),
-    title: "Study",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Study",
+    "isCompleted": false,
   },
 
   {
-    id: nanoid(),
-    title: "Work",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Work",
+    "isCompleted": false,
   },
 
   {
-    id: nanoid(),
-    title: "Buy milk",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Buy milk",
+    "isCompleted": false,
   },
 
   {
-    id: nanoid(),
-    title: "Buy bread",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Buy bread",
+    "isCompleted": false,
   },
 
   {
-    id: nanoid(),
-    title: "Slip for 7 hours",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Slip for 7 hours",
+    "isCompleted": false,
   },
 
   {
-    id: nanoid(),
-    title: "Go to training",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Go to training",
+    "isCompleted": false,
   },
 
   {
-    id: nanoid(),
-    title: "Watch movie",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Watch movie",
+    "isCompleted": false,
   },
 
   {
-    id: nanoid(),
-    title: "Call my girlfriend",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Call my girlfriend",
+    "isCompleted": false,
   },
 
   {
-    id: nanoid(),
-    title: "Relax",
-    isCompleted: false,
+    "id": nanoid(),
+    "title": "Relax",
+    "isCompleted": false,
   },
 ];
 
@@ -64,9 +64,9 @@ export const addTodoMock = (title) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const newTodo = {
-        id: nanoid(),
+        "id": nanoid(),
         title,
-        isCompleted: false,
+        "isCompleted": false,
       };
 
       todoList = [...todoList, newTodo];

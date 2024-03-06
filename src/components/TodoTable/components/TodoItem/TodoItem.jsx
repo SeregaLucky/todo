@@ -27,7 +27,7 @@ const Item = ({ id, title, isCompleted }) => {
     dispatch(
       todoOperations.changeCompletedStatusInTodo({
         id,
-        isCompleted: !isCompleted,
+        "isCompleted": !isCompleted,
       }),
     );
   };
@@ -67,9 +67,9 @@ const Item = ({ id, title, isCompleted }) => {
 };
 
 Item.propTypes = {
-  id: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  isCompleted: PropTypes.bool.isRequired,
+  "id": PropTypes.string.isRequired,
+  "title": PropTypes.string.isRequired,
+  "isCompleted": PropTypes.bool.isRequired,
 };
 
 export default memo(Item);

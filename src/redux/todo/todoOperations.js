@@ -36,7 +36,7 @@ const addTodo = (title) => async (dispatch) => {
 const changeCompletedStatusInTodo = (data) => async (dispatch, getState) => {
   const { id, isCompleted } = data;
 
-  const repeat = getIsChangeStatusTodoLoading({ state: getState(), id });
+  const repeat = getIsChangeStatusTodoLoading({ "state": getState(), id });
   if (repeat) return;
 
   dispatch(todoActions.changeCompletedStatusInTodoStart(id));
@@ -52,7 +52,7 @@ const changeCompletedStatusInTodo = (data) => async (dispatch, getState) => {
 };
 
 const removeTodo = (id) => async (dispatch, getState) => {
-  const repeat = getIsRemoveTodoIdsLoading({ state: getState(), id });
+  const repeat = getIsRemoveTodoIdsLoading({ "state": getState(), id });
   if (repeat) return;
 
   dispatch(todoActions.removeTodoStart(id));

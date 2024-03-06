@@ -8,7 +8,7 @@ import todoOperations from "../../../../redux/todo/todoOperations";
 const MAX_TITLE_LENGTH = 30;
 
 const schema = yup.object({
-  title: yup
+  "title": yup
     .string()
     .required("Title can not be empty")
     .max(MAX_TITLE_LENGTH, `Max length: ${MAX_TITLE_LENGTH} symbols`)
@@ -20,24 +20,24 @@ export const useFormTodo = () => {
 
   const {
     register,
-    formState: { errors },
+    "formState": { errors },
     handleSubmit,
     reset,
     setFocus,
-  } = useForm({ resolver: yupResolver(schema), mode: "onSubmit" });
+  } = useForm({ "resolver": yupResolver(schema), "mode": "onSubmit" });
 
   const onSubmit = async ({ title }) => {
     const titleTrim = title.trim();
     if (titleTrim.length === 0) return;
 
     await dispatch(todoOperations.addTodo(titleTrim));
-    reset({ title: "" });
+    reset({ "title": "" });
     setFocus("title");
   };
 
   return {
-    handleSubmit: handleSubmit(onSubmit),
+    "handleSubmit": handleSubmit(onSubmit),
     register,
-    error: errors.title,
+    "error": errors.title,
   };
 };

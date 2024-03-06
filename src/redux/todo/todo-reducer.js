@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import todoTypes from "./todoTypes";
-import { FilterStatus } from "const/filterStatus";
+import todoTypes from "./todo-types";
+import { FilterStatus } from "const/filter-status";
 
 const todoListReducer = (state = [], { type, payload }) => {
   switch (type) {

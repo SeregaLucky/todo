@@ -1,4 +1,4 @@
-import todoTypes from "./todoTypes";
+import todoTypes from "./todo-types";
 
 /* GET_TODO_LIST */
 const getTodoListStart = () => ({

@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   getFilterByFilterStatus,
   getIsGetTodoListLoading,
-} from "../../../../redux/todo/todoSelectors";
-import todoOperations from "../../../../redux/todo/todoOperations";
+} from "../../../../redux/todo/todo-selectors";
+import todoOperations from "../../../../redux/todo/todo-operations";
 
 export const useGetTodoList = () => {
   const dispatch = useDispatch();

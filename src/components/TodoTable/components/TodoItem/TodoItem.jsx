@@ -5,11 +5,11 @@ import PropTypes from "prop-types";
 
 import Spinner from "../Spinner";
 
-import todoOperations from "../../../../redux/todo/todoOperations";
+import todoOperations from "../../../../redux/todo/todo-operations";
 import {
   getIsChangeStatusTodoLoading,
   getIsRemoveTodoIdsLoading,
-} from "../../../../redux/todo/todoSelectors";
+} from "../../../../redux/todo/todo-selectors";
 
 import styles from "./TodoItem.module.scss";
 

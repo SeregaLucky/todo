@@ -2,7 +2,7 @@ import TodoItem from "../TodoItem";
 
 import Spinner from "../Spinner";
 
-import { useGetTodoList } from "./useGetTodo";
+import { useGetTodoList } from "./use-get-todo";
 
 import styles from "./TodoList.module.scss";
 

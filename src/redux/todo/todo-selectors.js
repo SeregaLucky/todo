@@ -1,6 +1,6 @@
 import { createSelector } from "reselect";
 
-import { FilterStatus } from "const/filterStatus";
+import { FilterStatus } from "const/filter-status";
 
 const getTodoList = (state) => state.todoReducer.todoList;
 

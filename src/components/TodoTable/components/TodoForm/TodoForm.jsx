@@ -2,9 +2,9 @@ import { useSelector } from "react-redux";
 
 import Spinner from "../Spinner";
 
-import { getIsAddTodoLoading } from "../../../../redux/todo/todoSelectors";
+import { getIsAddTodoLoading } from "../../../../redux/todo/todo-selectors";
 
-import { useFormTodo } from "./useFormTodo";
+import { useFormTodo } from "./use-form-todo";
 
 import styles from "./TodoForm.module.scss";
 

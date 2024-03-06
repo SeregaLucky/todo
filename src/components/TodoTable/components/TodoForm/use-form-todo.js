@@ -3,7 +3,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
-import todoOperations from "../../../../redux/todo/todoOperations";
+import todoOperations from "../../../../redux/todo/todo-operations";
 
 const MAX_TITLE_LENGTH = 30;
 

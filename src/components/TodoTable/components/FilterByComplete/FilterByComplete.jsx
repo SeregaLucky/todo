@@ -1,13 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import cn from "classnames";
 
-import { FilterStatus } from "const/filterStatus";
+import { FilterStatus } from "const/filter-status";
 
-import todoActions from "../../../../redux/todo/todoActions";
+import todoActions from "../../../../redux/todo/todo-actions";
 import {
   getFilterStatus,
   getIsEmptyList,
-} from "../../../../redux/todo/todoSelectors";
+} from "../../../../redux/todo/todo-selectors";
 
 import styles from "./FilterByComplete.module.scss";
 

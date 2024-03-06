@@ -4,11 +4,11 @@ import {
   changeCompletedStatusInTodoMock,
   removeTodoMock,
 } from "../../api/api";
-import todoActions from "./todoActions";
+import todoActions from "./todo-actions";
 import {
   getIsChangeStatusTodoLoading,
   getIsRemoveTodoIdsLoading,
-} from "./todoSelectors";
+} from "./todo-selectors";
 
 // eslint-disable-next-line unicorn/consistent-function-scoping
 const getTodoList = () => async (dispatch) => {

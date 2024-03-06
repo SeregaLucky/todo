@@ -4,7 +4,11 @@ module.exports = {
     es2021: true,
   },
 
-  extends: ["eslint:recommended", "plugin:react/recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "@wemake-services/javascript",
+  ],
 
   overrides: [
     {
@@ -26,9 +30,18 @@ module.exports = {
   plugins: ["react"],
 
   rules: {
-    "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off",
     semi: ["error", "always"],
     quotes: ["error", "double"],
+
+    "react/react-in-jsx-scope": "off",
+
+    "unicorn/prefer-includes": "off",
+
+    "quote-props": "off",
+    "unicorn/no-null": "off",
+    "unicorn/no-array-reduce": "off",
+    complexity: "off",
+
+    "unicorn/filename-case": "off", // Импорт что бы был кебабом
   },
 };

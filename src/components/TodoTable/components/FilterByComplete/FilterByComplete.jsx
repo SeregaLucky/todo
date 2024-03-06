@@ -3,11 +3,11 @@ import cn from "classnames";
 
 import { FilterStatus } from "const/filterStatus";
 
-import itemsActions from "../../../../redux/items/itemsActions";
+import todoActions from "../../../../redux/todo/todoActions";
 import {
   getFilterStatus,
   getIsEmptyList,
-} from "../../../../redux/items/itemsSelectors";
+} from "../../../../redux/todo/todoSelectors";
 
 import styles from "./FilterByComplete.module.scss";
 
@@ -17,7 +17,7 @@ const FilterByComplete = () => {
   const currentFilterStatus = useSelector(getFilterStatus);
   const isEmptyList = useSelector(getIsEmptyList);
 
-  const onClick = type => dispatch(itemsActions.changeFilterStatus(type));
+  const onClick = (type) => dispatch(todoActions.changeFilterStatus(type));
 
   if (isEmptyList) return null;
 

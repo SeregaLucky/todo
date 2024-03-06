@@ -1,7 +1,7 @@
-import Todo from "components/Todo";
+import TodoTable from "components/TodoTable";
 
 const App = () => {
-  return <Todo />;
+  return <TodoTable />;
 };
 
 export default App;

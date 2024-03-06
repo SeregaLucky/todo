@@ -1,9 +1,9 @@
 import CountStatus from "./components/CountStatus";
-import Form from "./components/Form";
+import TodoForm from "./components/TodoForm";
 import FilterByComplete from "./components/FilterByComplete";
-import List from "./components/List";
+import TodoList from "./components/TodoList";
 
-import styles from "./Todo.module.scss";
+import styles from "./TodoTable.module.scss";
 
 const Todo = () => {
   return (
@@ -11,9 +11,9 @@ const Todo = () => {
       <h1 className={styles.title}>TODO</h1>
 
       <CountStatus />
-      <Form />
+      <TodoForm />
       <FilterByComplete />
-      <List />
+      <TodoList />
     </div>
   );
 };

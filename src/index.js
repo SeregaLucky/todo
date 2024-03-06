@@ -9,7 +9,7 @@ import { store } from "./redux/store";
 import "./stylesheet/vars.css";
 import "./stylesheet/part-reset.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 root.render(
   <StrictMode>

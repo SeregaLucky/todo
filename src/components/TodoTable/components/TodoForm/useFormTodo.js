@@ -3,7 +3,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 
-import itemsOperations from "../../../../redux/items/itemsOperations";
+import todoOperations from "../../../../redux/todo/todoOperations";
 
 const MAX_TITLE_LENGTH = 30;
 
@@ -30,7 +30,7 @@ export const useFormTodo = () => {
     const titleTrim = title.trim();
     if (titleTrim.length === 0) return;
 
-    await dispatch(itemsOperations.addItem(titleTrim));
+    await dispatch(todoOperations.addTodo(titleTrim));
     reset({ title: "" });
     setFocus("title");
   };

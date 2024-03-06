@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import cn from "classnames";
 
-import { getDataCountStatus } from "../../../../redux/items/itemsSelectors";
+import { getDataCountStatus } from "../../../../redux/todo/todoSelectors";
 
 import styles from "./CountStatus.module.scss";
 

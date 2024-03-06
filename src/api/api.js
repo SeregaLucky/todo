@@ -1,6 +1,6 @@
 import { nanoid } from "nanoid";
 
-let items = [
+let todoList = [
   {
     id: nanoid(),
     title: "Study",
@@ -56,43 +56,43 @@ let items = [
   },
 ];
 
-export const getItemsMock = () => {
-  return new Promise(res => setTimeout(() => res(items), 400));
+export const getTodoListMock = () => {
+  return new Promise((resolve) => setTimeout(() => resolve(todoList), 400));
 };
 
-export const addItemMock = title => {
-  return new Promise(res =>
+export const addTodoMock = (title) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      const newItem = {
+      const newTodo = {
         id: nanoid(),
-        title: title,
+        title,
         isCompleted: false,
       };
 
-      items = [...items, newItem];
+      todoList = [...todoList, newTodo];
 
-      res(newItem);
-    }, 400),
-  );
+      resolve(newTodo);
+    }, 400);
+  });
 };
 
-export const changeCompletedStatusInItemMock = ({ id, isCompleted }) => {
-  return new Promise(res =>
+export const changeCompletedStatusInTodoMock = ({ id, isCompleted }) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      items = items.map(item =>
-        item.id === id ? { ...item, isCompleted } : item,
-      );
+      todoList = todoList.map((todo) => {
+        return todo.id === id ? { ...todo, isCompleted } : todo;
+      });
 
-      res(items);
-    }, 400),
-  );
+      resolve(todoList);
+    }, 400);
+  });
 };
 
-export const removeItemMock = id => {
-  return new Promise(res =>
+export const removeTodoMock = (id) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      items = items.filter(item => item.id !== id);
-      res(id);
-    }, 400),
-  );
+      todoList = todoList.filter((todo) => todo.id !== id);
+      resolve(id);
+    }, 400);
+  });
 };

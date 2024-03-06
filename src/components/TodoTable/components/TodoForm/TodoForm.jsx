@@ -2,14 +2,14 @@ import { useSelector } from "react-redux";
 
 import Spinner from "../Spinner";
 
-import { getIsAddItemLoading } from "../../../../redux/items/itemsSelectors";
+import { getIsAddTodoLoading } from "../../../../redux/todo/todoSelectors";
 
 import { useFormTodo } from "./useFormTodo";
 
-import styles from "./Form.module.scss";
+import styles from "./TodoForm.module.scss";
 
-const Form = () => {
-  const isAddingItem = useSelector(getIsAddItemLoading);
+const TodoForm = () => {
+  const isAddingTodo = useSelector(getIsAddTodoLoading);
 
   const { register, handleSubmit, error } = useFormTodo();
 
@@ -32,10 +32,10 @@ const Form = () => {
       <button
         className={styles.submitButton}
         type="submit"
-        disabled={isAddingItem}
+        disabled={isAddingTodo}
       >
         Send
-        {isAddingItem && (
+        {isAddingTodo && (
           <span className={styles.containerSpinner}>
             <Spinner />
           </span>
@@ -45,4 +45,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default TodoForm;

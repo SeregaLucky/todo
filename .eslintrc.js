@@ -38,8 +38,9 @@ module.exports = {
     "unicorn/prefer-includes": "off", // This rule is outdated and an error
     "unicorn/no-array-reduce": "off", // This rule is outdated and an error
 
-    "unicorn/no-null": "off",
-    "complexity": "off",
+    "unicorn/no-null": "off", // I need to understand why you need this rule
+    "complexity": "off", // I need to understand why you need this rule
+    // It’s not entirely clear then with the names of the components.
     "unicorn/filename-case": "off",
   },
 };
